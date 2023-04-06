@@ -1,0 +1,60 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+.overflow {
+    height: 50%;
+    overflow: hidden;
+}
+
+.overflow .card-img-top:hover {
+  transform: scale(1.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.underline {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+body{
+  background-image: linear-gradient(90deg,#33b7e2,#5e62b0,#8530dc);
+}
+
+.bg-custom-primary {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  --bs-bg-opacity: .2;
+  background-color: rgba(var(--bs-info-rgb),var(--bs-bg-opacity))!important;
+}
+
+/* 
+  la clase typing-effect simula la escritura de una palabra y su borrado
+  al momento de terminar su borrado el content tiene que ser vacio
+*/
+
+
+
+
+
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50%, 100% {
+    width: 90%;
+  }
+  60% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
